@@ -6,7 +6,7 @@ import {
   includePaths,
   excludePaths,
   loadEnv,
-  // nodePaths,
+  nodePaths,
 } from './utils';
 
 export default function () {
