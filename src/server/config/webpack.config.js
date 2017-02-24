@@ -8,7 +8,7 @@ import {
   excludePaths,
   nodeModulesPaths,
   loadEnv,
-  // nodePaths,
+  nodePaths,
 } from './utils';
 import babelLoaderConfig from './babel.js';
 

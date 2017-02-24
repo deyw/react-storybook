@@ -8,6 +8,10 @@ var _extends2 = require('babel-runtime/helpers/extends');
 
 var _extends3 = _interopRequireDefault(_extends2);
 
+var _autoprefixer = require('autoprefixer');
+
+var _autoprefixer2 = _interopRequireDefault(_autoprefixer);
+
 var _utils = require('../utils');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -60,4 +64,4 @@ module.exports = function (storybookBaseConfig) {
 
   // Return the altered config
   return newConfig;
-}; // import autoprefixer from 'autoprefixer';
+};
