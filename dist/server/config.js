@@ -16,7 +16,7 @@ exports.default = function (configType, baseConfig, configDir) {
   var config = baseConfig;
 
   // const babelConfig = loadBabelConfig(configDir);
-  // config.module.rules[0].query = babelConfig;
+  // config.module.loaders[0].query = babelConfig;
 
   // Check whether a config.js file exists inside the storybook
   // config directory and throw an error if it's not.
@@ -70,6 +70,8 @@ exports.default = function (configType, baseConfig, configDir) {
     })
   });
 
+  // addJsonLoaderIfNotAvailable(newConfig);
+
   return newConfig;
 };
 
@@ -81,13 +83,10 @@ var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
 
-var _babel_config = require('./babel_config');
-
-var _babel_config2 = _interopRequireDefault(_babel_config);
-
-var _utils = require('./config/utils');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import loadBabelConfig from './babel_config';
+// import { includePaths } from './config/utils';
 
 // avoid ESLint errors
 /* eslint global-require: 0 */
